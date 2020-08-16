@@ -21,7 +21,7 @@ draft: true
 
 ## Setup
 
-### Acquire instalation media
+### Acquire installation media
 
 ### Virtualization
     * Install hypervisor (VirtualBox, VMWare Player)
