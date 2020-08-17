@@ -1,9 +1,3 @@
----
-title: "00 Homelab Setup"
-date: 2020-08-16T10:44:55+01:00
-draft: true
----
-
 # Homelab Setup
 
 ## Preface
