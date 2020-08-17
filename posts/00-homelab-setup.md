@@ -37,7 +37,7 @@ For example you can browse OpenSUSE packages [here](https://software.opensuse.or
 
 `HINT:` You can use [pkgs.org](https://pkgs.org/) to find and compare specific package versions on several popular Linux distributions.
 
-[pkgs.org](/posts/pkgs.org.png)
+![pkgs.org](/posts/pkgs.org.png)
 
 ---
 
