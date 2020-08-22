@@ -1,6 +1,6 @@
 # __Homelab Setup__
 
-![Raspberry Pi Cluster](/posts/pi-cluster.jpg)
+![Raspberry Pi Cluster](/posts/00-homelab-setup/pi-cluster.jpg)
 
 ## __Preface__
 
@@ -25,7 +25,7 @@ Server operating systems have lower minimum requirements than desktop operating 
 
 Example:
 
-![VMWare Settings](/posts/vmware.png)
+![VMWare Settings](/posts/00-homelab-setup/vmware.png)
 
 ### __Choice of Operating System__
 
@@ -51,7 +51,7 @@ For example you can browse OpenSUSE packages [here](https://software.opensuse.or
 
 `HINT:` You can use [pkgs.org](https://pkgs.org/) to find and compare specific package versions on several popular Linux distributions.
 
-![pkgs.org](/posts/pkgs.org.png)
+![pkgs.org](/posts/00-homelab-setup/pkgs.org.png)
 
 ## __Post Installation Steps__
 
@@ -231,17 +231,17 @@ Examples:
 
 You should see the login page
 
-![cockpit login](/posts/cockpit-login.png)
+![cockpit login](/posts/00-homelab-setup/cockpit-login.png)
 
 Enter any valid credentials for the system you're accessing. Once logged in you should see a dashboard
 
-![cockpit dashboard](/posts/cockpit-dashboard.png)
+![cockpit dashboard](/posts/00-homelab-setup/cockpit-dashboard.png)
 
 Cockpit gives you an overview of several aspects of your system. Feel free to browse around and learn more [here](https://cockpit-project.org/)
 
 ## __Troubleshooting__
 
-![troubleshooting](/posts/troubleshoot.gif)
+![troubleshooting](/posts/00-homelab-setup/troubleshoot.gif)
 
 In the inevitable event that you run into issues it is vital to know how to look for solutions.
 Remember that no one knows everything. Knowing how to find answers is a skill in and of itself.
