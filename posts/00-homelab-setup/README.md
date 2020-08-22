@@ -250,9 +250,3 @@ Before asking someone for help, consider trying the following:
 * Look at the manual pages for the commands you are trying to use (`man <command-name>`)
 * Look at the official documentation for your operating system, or specific service you're troubleshooting
 * Search in online forums
-
-## Additional Reading
-
-If your Linux command line skills are a bit rusty you can get a refresher [here](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
-
-It can be very useful to learn and get comfortable with an extensible text editor such as [Vim](https://www.vim.org/) or [Emacs](https://www.gnu.org/software/emacs/)
