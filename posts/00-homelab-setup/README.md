@@ -62,7 +62,7 @@ Some distributions have the ability to add third party repositories such as PPAs
 It is vital to understand the basics of your package manager before continuing.
 To learn more about your package manager, access their man pages using the following commands
 
-``` bash
+``` sh
 # Debian, Ubuntu
 man apt
 
@@ -80,7 +80,7 @@ man zypper
 
 This will allow us to connect to our servers remotely via the SSH protocol. Further steps will
 
-``` bash
+``` sh
 # Debian, Ubuntu
 apt install openssh-server
 
@@ -96,7 +96,7 @@ zypper install openssh
 
 `HINT:` Installing new software requires root privileges. You will need to prefix the commands above with `sudo` unless running as the root user.
 
-__The remainder of this series will focus on Raspberry Pi OS. If certain steps are not compatible with your system of choice, consult the documentation or check online for a solution__
+`NOTE:` __The remainder of this series will focus on Raspberry Pi OS. If certain steps are not compatible with your system of choice, consult the documentation or check online for a solution__
 
 ### __Hostname__
 
@@ -106,7 +106,7 @@ In my case I will name each host after the color of it's case.
 
 Type the following example into the terminal, substituting the host name with whatever you wish:
 
-``` bash
+``` sh
 hostname pi-red
 ```
 
@@ -114,14 +114,14 @@ hostname pi-red
 
 Edit `/etc/dhcpcd.conf` using `nano` or any other text editor of your choice
 
-``` bash
+``` sh
 nano /etc/dhcpcd.conf
 ```
 
 Add the following lines to set the IP to `192.168.1.xxx` where `xxx` is an integer between 1 & 254. Ensure all VMs have unique IP addresses
 In this example we will set the ip to `192.168.1.100`
 
-``` bash
+``` sh
 interface eth0
 static ip_address=192.168.1.100
 ```
@@ -130,7 +130,7 @@ Changes will take effect after rebooting
 
 ### __`BONUS:` Cockpit__
 
-``` bash
+``` sh
 # Install cockpit
 apt install cockpit
 
@@ -143,7 +143,7 @@ systemctl status cockpit
 
 If started successfully the output of `systemctl status` should contain something like:
 
-```
+``` sh
 Active: active (running) since ...
 ```
 
@@ -154,18 +154,20 @@ Active: active (running) since ...
 Add DNS entries for your remote systems by editing your host operating system's `hosts` file. Editing requires root/admin privileges
 
 On Linux & macOS the `hosts` file is located in:
-```
+
+``` sh
 /etc/hosts
 ```
 
 On Windows the `hosts` file is located in:
-```
+
+``` sh
 C:\Windows\System32\drivers\etc\hosts
 ```
 
 Add an entry for each VM you created. Example:
 
-```
+``` conf
 192.168.1.100   pi-red
 192.168.1.101   pi-blue
 192.168.1.102   pi-yellow
@@ -180,18 +182,18 @@ On Windows I recommend using [WSL](https://docs.microsoft.com/en-us/windows/wsl/
 
 In your home folder crate a hidden `.ssh` folder. Inside the folder create a file called `config`.
 
-``` bash
+``` sh
 mkdir ~/.ssh
 touch ~/.ssh/config
 ```
 
 Edit the `config` file and add the following content (ensuring it matches the values you entered above)
 
-``` bash
+``` sh
 nano ~/.ssh/config
 ```
 
-```
+``` sh
 # Enter an arbitrary name here
 Host pi-red
 
@@ -203,7 +205,7 @@ HostName 192.168.1.100
 
 To verify you can connect successfully enter the following into your shell
 
-``` bash
+``` sh
 ssh username@pi-red
 ```
 
@@ -215,7 +217,7 @@ You should now be connected to your remote machine
 
 Verify using:
 
-``` bash
+``` sh
 uname -a
 ```
 
@@ -226,6 +228,7 @@ Try connecting to cockpit on your host operating system.
 Open a web browser and either type a DNS name or IP address followed by cockpit's default port number 9090
 
 Examples:
+
 * `192.168.1.100:9090`
 * `pi-red:9090`
 
