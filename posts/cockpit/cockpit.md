@@ -2,28 +2,24 @@
 
 ## What is Cockpit
 
+Cockpit is a remote administration tool that lets you monitor resource usage, run system tasks and connect via SSH in a convenient web based GUI.
+
 ## Installation
 
 ``` sh
 # Install cockpit
 apt install cockpit
 
-# Start the cockpit service
-systemctl start cockpit
+# Check if the service is running
+service cockpit status
 
-# Check the status of the cockpit service
-systemctl status cockpit
-```
-
-If started successfully the output of `systemctl status` should contain something like:
-
-``` sh
-Active: active (running) since ...
+# Run the service if it's not running already
+service cockpit start
 ```
 
 ## Connecting to Cockpit
 
-Try connecting to cockpit on your host operating system.
+Try connecting to cockpit on your local computer.
 
 Open a web browser and either type a DNS name or IP address followed by cockpit's default port number 9090
 
