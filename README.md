@@ -35,9 +35,8 @@
 
 ## Miscellaneous
 
-15. Continuous integration with TeamCity
-16. Network wide ad blocking with Pi Hole
-
+16. Continuous integration with TeamCity
+17. Network wide ad blocking with Pi Hole
 -->
 
 ## Further reading
